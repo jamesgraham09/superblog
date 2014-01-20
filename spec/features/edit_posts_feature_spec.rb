@@ -10,7 +10,7 @@ describe "editing a post" do
 
 	it "is possible by clicking a link on the index page to the relevant post" do
 		visit "posts"
-		click_link 'Edit Post'
+		click_link 'Test Post'
 		fill_in 'Name', with: 'Amended Test Post'
 		click_button 'Create Post'
 

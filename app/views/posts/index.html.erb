@@ -5,8 +5,7 @@
 <hr>
 <% @posts.each do |post| %>
   <p>
-  <h3><%= post.name %></h3>
-  <%= post.description %>
-  <%= link_to 'Edit Post', edit_post_path(post) %>
+  <h3><%= link_to post.name, edit_post_path(post) %></h3>
+  <%= truncate(post.description, :length => 70) %>
   <hr></p>
 <% end %>

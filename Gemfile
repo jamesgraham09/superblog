@@ -41,6 +41,8 @@ end
 
 gem 'factory_girl_rails'
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

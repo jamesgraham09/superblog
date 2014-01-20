@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+	# before_filter :authenticate_user!
+	# recommended by devise to authenticate at start of controller
+
 	def new
 		@post = Post.new
 	end
