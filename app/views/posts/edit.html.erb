@@ -1,0 +1,21 @@
+<%= form_for @post do |f| %>
+  
+
+  <h3>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </h3>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+
+    <%= f.submit 'Create Post' %>
+  </p>
+
+<% end %>
+
+  <p>
+    <%= link_to 'Delete Post', post_path(@post), method: :delete %>
+  </p>
