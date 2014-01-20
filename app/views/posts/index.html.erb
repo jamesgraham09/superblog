@@ -1,11 +1,26 @@
-<h1> Welcome to the posts index </h1>
+<h3> Welcome to the posts index </h3>
+
 
 <hr>
+
 <%= link_to 'Add a New Post', new_post_path %><br>
+
 <hr>
+
 <% @posts.each do |post| %>
-  <p>
-  <h3><%= link_to post.name, edit_post_path(post) %></h3>
-  <%= truncate(post.description, :length => 70) %>
-  <hr></p>
+  
+  <div class="row">
+    
+    <div class="col-xs-1">
+	  <%= image_tag post.postpic.url(:thumb) %>
+	</div>
+	
+	<div class="col-xs-11">
+	  <strong><%= link_to post.name, edit_post_path(post) %></strong><br>
+	  <p><%= truncate(post.description, :length => 70) %></p>
+    </div>
+  </div>
+  <hr>
 <% end %>
+
+

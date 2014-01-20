@@ -12,14 +12,19 @@
 
 <%= form_for @post do |f| %>
   
-  <p>
+  <h3>
     <%= f.label :name %>
     <%= f.text_field :name %>
-  </p>
+  </h3>
 
   <p>
     <%= f.label :description %>
     <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.label :postpic %>
+    <%= f.file_field :postpic %>
   </p>
 
     <%= f.submit 'Create Post' %>

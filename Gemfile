@@ -43,6 +43,10 @@ gem 'factory_girl_rails'
 
 gem 'devise'
 
+gem "paperclip", "~> 3.0"
+
+gem "twitter-bootstrap-rails", github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
