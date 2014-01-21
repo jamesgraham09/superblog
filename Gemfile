@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -44,8 +45,11 @@ gem 'factory_girl_rails'
 gem 'devise'
 
 gem "paperclip", "~> 3.0"
+gem 'aws-sdk'
 
 gem "twitter-bootstrap-rails", github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
+
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
