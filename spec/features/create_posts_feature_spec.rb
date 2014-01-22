@@ -6,11 +6,14 @@ describe "creating a post" do
 			visit "posts/new"
 			fill_in 'Name', with: 'Test Post'
 			fill_in 'Description', with: 'What a wonderful world'
+			fill_in 'Tags', :with => 'yolo swag'
 			click_button 'Create Post'
 
 			expect(current_path).to eq('/posts')
 			expect(page).to have_content('Test Post')
 			expect(page).to have_content('What a wonderful world')
+			expect(page).to have_content('#yolo')
+			expect(page).to have_content('#swag')
 		end
 	end
 

@@ -18,6 +18,10 @@
 	<div class="col-xs-11">
 	  <strong><%= link_to post.name, edit_post_path(post) %></strong><br>
 	  <p><%= truncate(post.description, :length => 70) %></p>
+	  <p><small style="font-style:italic;color:gray">Tags -> </small> <% post.tags.each do |tag| %>
+	    <%= tag %>
+	    <% end %></p> 
+
     </div>
   </div>
   <hr>
