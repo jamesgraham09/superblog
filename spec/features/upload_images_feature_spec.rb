@@ -5,7 +5,7 @@ describe "upload images" do
 	# 	login
 	# end
 
-	it 'allows me to attach a photo on the new post form' do
+	it 'allows me to attach a photo on the new post form' Description
 	    visit '/posts/new'
 
 	    fill_in 'Name', with: 'My test photo'
